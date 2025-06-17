@@ -1,10 +1,10 @@
-Voting DApp
-📚 Project Overview
+# Voting DApp
+## 📚 Project Overview
 Voting DApp is a decentralized application (DApp) that allows for secure and transparent voting powered by Solidity smart contracts, deployed with Hardhat, and integrated with React.
 Voting is performed by Metamask wallet approval for transactions.
 The DApp lets admins add candidates, voters vote for their preferred candidate, and the admin end the election and view the final results afterwards.
 
-🔹Features
+## 🔹Features
 Add Candidates: The admin (contract owner) can add candidates before the election starts.
 
 Voting: Voters can vote for their preferred candidate by signing a transaction through MetaMask.
@@ -13,7 +13,7 @@ One voter = One vote: Each voter can vote only once.
 
 Close Election: The admin can close the election, after which the results are displayed to everyone.
 
-🛡 Tech Stack
+## 🛡 Tech Stack
 Solidity
 
 Hardhat
@@ -28,36 +28,23 @@ Node.js
 
 Bootstrap / CSS modules for styling (adjust to your own stack)
 
-🔹 Installation & Setup
+## 🔹 Installation & Setup
 1. Clone this repository:
-bash
-Copy
-Edit
-git clone https://github.com/your-username/voting-dapp.git
-cd voting-dapp
+
 2. Install dependencies:
-bash
-Copy
-Edit
+
 npm install
 3. Compile Solidity smart contracts:
-bash
-Copy
-Edit
+
 npx hardhat compile
 🔹 Deployment
 To deploy the smart contract:
 
-bash
-Copy
-Edit
 npx hardhat deploy
 Save the deployed contract’s address afterwards — you’ll need it in your React application.
 
 🔹 Run React Application
-bash
-Copy
-Edit
+
 npm start
 The application should be up and running at http://localhost:3000.
 
@@ -91,7 +78,7 @@ This action prevents further voting
 The results are displayed afterwards.
 
 🔹 Screenshots
-frontend/src/components/SCREENSHOTS/Screenshot 2025-05-27 171550.png
+
 ![alt text](<src/components/SCREENSHOTS/Screenshot 2025-05-27 171550.png>)
 
 ![alt text](<src/components/SCREENSHOTS/Screenshot 2025-05-27 171613.png>)
