@@ -1,0 +1,12 @@
+candidate images
+
+
+candidate 1 imageLink
+https://i.imgur.com/PxSCTor_d.jpeg?maxwidth=520&shape=thumb&fidelity=high
+
+
+candidate 2 imageLink
+https://i.imgur.com/7WUuhfL.jpeg
+
+candidate 2 imageLink
+https://i.imgur.com/2J2fmns.jpeg

@@ -1,38 +1,656 @@
+/* App.css */
+/*   main body styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f4f6f8, #e1e8ed);
+  color: #333;
+}
+
 .App {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  color: #222;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+h3 {
+  color: #444;
+}
+
+input {
+  margin: 10px;
+  padding: 12px;
+  width: 85%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.candidate-card {
+  border: 1px solid hsl(0, 0%, 85%);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+  background: white;
+  transition: transform 0.2s;
+}
+
+.candidate-card:hover {
+  transform: translateY(-5px);
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #007bff;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.winner-highlight {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #155724;
+  font-size: 1.1rem;
+}
+
+.connect-wallet-button {
+  background-color: #28a745;
+}
+
+.connect-wallet-button:hover {
+  background-color: #218838;
+}
+
+/* Admin Buttons */
+button.edit-btn {
+  background-color: #07ffac;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.edit-btn:hover {
+  background-color: #05e2a1;
+}
+
+button.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.remove-btn:hover {
+  background-color: #c82333;
+}
+.header {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #0056b3;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.header nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.header nav a:hover {
+  opacity: 0.8;
+}
+.footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f3f5;
+  color: #555;
+  border-top: 2px solid #ddd;
+  font-size: 0.9rem;
+}
+
+/* Auth Form Styling (Login/Register) */
+.auth-container {
+  max-width: 400px;
+  margin: 60px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.auth-title {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 2.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.auth-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+  box-sizing: border-box;
+}
+
+.auth-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+}
+
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #0056b3;
+}
+
+.auth-footer {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.auth-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+/* ===== HEADER STYLES ===== */
+.header {
+  background: linear-gradient(to right, #5b2c6f, #283e51);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 28px;
+  color: #ffd700;
+}
+
+.site-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+
+/* ===== HEADER STYLES (Bluish) ===== */
+/* Header.css */
+
+/* Header.css */
+
+/* Base header styles */
+/* Header.css */
+
+/* Base header styles */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Brand section */
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-icon {
+  font-size: 1.75rem;
+  color: #3b82f6;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+  background: linear-gradient(to right, #ffffff, #e5e7eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Action container */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Greeting text */
+.header-greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 1rem;
+}
+
+.welcome-text {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.username {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Button base styles */
+.header-actions button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+}
+
+.btn-icon {
+  font-size: 1rem;
+}
+
+/* Button hover effects */
+.header-actions button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific button styles */
+.logout-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+.register-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.register-btn:hover {
+  background-color: #2563eb;
+}
+
+.login-btn {
+  background-color: #10b981;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #059669;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .header-container {
+    padding: 0.75rem 1rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .header-brand {
+    margin-bottom: 0.5rem;
+  }
+  
+  .header-actions {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .header-greeting {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ===== FOOTER STYLES (Bluish) ===== */
+.footer-container {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* deep bluish gradient */
+  color: white;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.footer-text {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #cfd8dc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00d4ff;
+  text-decoration: underline;
+}
+
+/*  STYLING THE AUTHETICATION APP INTERFACE  */
+/* src/components/Auth.css */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.auth-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-card h2 {
+  color: #4a6fa5;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4a6fa5;
+  box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.2);
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #4a6fa5;
   color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.auth-btn:hover {
+  background: #166088;
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggle-auth {
+  margin-top: 1.5rem;
+  color: #666;
 }
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #4a6fa5;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+  margin-left: 0.3rem;
+}
+
+.toggle-btn:hover {
+  color: #166088;
+}
+
+.error-message {
+  color: #f44336;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: rgba(244, 67, 54, 0.1);
+  border-radius: 5px;
+}
+
+
+.results {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #f0f0f0, #d9d9d9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.results h3 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #2c3e50;
+}
+
+.results p {
+  font-size: 48px;
+  font-weight: bold;
+  color: #27ae60;
+  margin: 0;
+}
+
+/*   candidate list styling */
+
+/* .App {
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  border: none;
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0051a8;
+} */
