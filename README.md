@@ -91,21 +91,20 @@ This action prevents further voting
 The results are displayed afterwards.
 
 🔹 Screenshots
-![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171550.png>)
+frontend/src/components/SCREENSHOTS/Screenshot 2025-05-27 171550.png
+![alt text](<src/components/SCREENSHOTS/Screenshot 2025-05-27 171550.png>)
 
-![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171613.png>)
+![alt text](<src/components/SCREENSHOTS/Screenshot 2025-05-27 171613.png>)
 
-![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171717.png>)
+![alt text](<src/components/SCREENSHOTS/Screenshot 2025-05-27 171717.png>)
 
-![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171751.png>)
+![alt text](<src/components/SCREENSHOTS/Screenshot 2025-05-27 171751.png>)
 
-![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171814.png>)
+![alt text](<src/components/SCREENSHOTS/Screenshot 2025-05-27 171814.png>)
 
-![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171832.png>)
+![alt text](<src/components/SCREENSHOTS/Screenshot 2025-05-27 171832.png>)
 
-![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171903.png>)
-
-![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 172245.png>)
+![alt text](<src/components/SCREENSHOTS/Screenshot 2025-05-27 172245.png>)
 
 
 🔹Add Candidate View:
