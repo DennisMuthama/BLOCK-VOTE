@@ -1,3 +1,137 @@
+Voting DApp
+📚 Project Overview
+Voting DApp is a decentralized application (DApp) that allows for secure and transparent voting powered by Solidity smart contracts, deployed with Hardhat, and integrated with React.
+Voting is performed by Metamask wallet approval for transactions.
+The DApp lets admins add candidates, voters vote for their preferred candidate, and the admin end the election and view the final results afterwards.
+
+🔹Features
+Add Candidates: The admin (contract owner) can add candidates before the election starts.
+
+Voting: Voters can vote for their preferred candidate by signing a transaction through MetaMask.
+
+One voter = One vote: Each voter can vote only once.
+
+Close Election: The admin can close the election, after which the results are displayed to everyone.
+
+🛡 Tech Stack
+Solidity
+
+Hardhat
+
+React
+
+MetaMask
+
+Ether.js
+
+Node.js
+
+Bootstrap / CSS modules for styling (adjust to your own stack)
+
+🔹 Installation & Setup
+1. Clone this repository:
+bash
+Copy
+Edit
+git clone https://github.com/your-username/voting-dapp.git
+cd voting-dapp
+2. Install dependencies:
+bash
+Copy
+Edit
+npm install
+3. Compile Solidity smart contracts:
+bash
+Copy
+Edit
+npx hardhat compile
+🔹 Deployment
+To deploy the smart contract:
+
+bash
+Copy
+Edit
+npx hardhat deploy
+Save the deployed contract’s address afterwards — you’ll need it in your React application.
+
+🔹 Run React Application
+bash
+Copy
+Edit
+npm start
+The application should be up and running at http://localhost:3000.
+
+🔹 How To Use
+✅ Add Candidate (Admin):
+
+Connect MetaMask
+
+Enter candidate’s name
+
+Confirm transaction in MetaMask
+
+Candidate is added to the list.
+
+✅ Voting (Voter):
+
+Connect MetaMask
+
+Select your preferred candidate
+
+Confirm transaction in MetaMask
+
+Your vote is recorded (each voter can vote only once)
+
+✅ Close Election (Admin):
+
+The admin can close the election
+
+This action prevents further voting
+
+The results are displayed afterwards.
+
+🔹 Screenshots
+![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171550.png>)
+
+![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171613.png>)
+
+![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171717.png>)
+
+![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171751.png>)
+
+![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171814.png>)
+
+![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171832.png>)
+
+![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 171903.png>)
+
+![alt text](<artifacts/SCREENSHOTS/Screenshot 2025-05-27 172245.png>)
+
+
+🔹Add Candidate View:
+
+🔹Voting View:
+
+🔹Election Result View:
+
+🔹 Additional Notes
+MetaMask is required to perform transactions.
+
+The application runs on Hardhat’s local network by default.
+
+Change network configuration in hardhat.config.js to deploy to a testnet or mainnet.# Sample Hardhat Project
+
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+
+Try running some of the following tasks:
+
+```shell
+npx hardhat help
+npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat node
+npx hardhat ignition deploy ./ignition/modules/Lock.js
+```
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
