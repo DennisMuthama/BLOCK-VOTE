@@ -26,7 +26,7 @@ Ether.js
 
 Node.js
 
-Bootstrap / CSS modules for styling (adjust to your own stack)
+Bootstrap / CSS modules for styling 
 
 ## 🔹 Installation & Setup
 1. Clone this repository:
